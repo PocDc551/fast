@@ -9,8 +9,10 @@ generate:
     - /actuator/env
   - into:
     - URI
+    - ACTION_NAME
   - method:
     - postfix
+    - replace
 detect:
   - response:
     - headers:
