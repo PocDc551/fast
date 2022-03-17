@@ -8,8 +8,10 @@ generate:
     - actuator/env
     - /actuator/env
   - into:
-    - URI
+    - ACTION_EXT
     - ACTION_NAME
+    - PATH
+    - URI
   - method:
     - postfix
     - replace
