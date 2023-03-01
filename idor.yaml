@@ -1,19 +1,26 @@
+collect:
+  - uniq:
+    - [ URI ]
 generate:
   - payload:
     - "1"
     - "2"
     - "1232"
     - "12321"
+  - into:
+    - ACTION_EXT
+    - ACTION_NAME
+    - PATH
+    - URI
   - method:
+    - postfix
     - replace
-
 detect:
   - response:
     - status_code: 200
-    
 meta-info:
   - type: idor
-  - threat: 90
+  - threat: 80
   - tags:
     - IDOR
     - Insecure Direct Object References
