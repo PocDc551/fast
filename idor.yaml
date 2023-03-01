@@ -1,0 +1,23 @@
+generate:
+  - payload:
+    - 1
+    - 2
+    - 1232
+    - 12321
+  - method:
+    - replace
+
+detect:
+  - response:
+    - status_code: 200
+    
+meta-info:
+  - type: idor
+  - threat: 90
+  - tags:
+    - IDOR
+    - Insecure Direct Object References
+    - Broken Access Control
+    - OWASP
+    - OWASP Top-10
+    - A5:2017
