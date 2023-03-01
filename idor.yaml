@@ -3,10 +3,12 @@ collect:
     - [ URI ]
 generate:
   - payload:
-    - "1"
-    - "2"
-    - "1232"
-    - "12321"
+    - "1595"
+    - "1576"
+    - "900282101"
+    - "2121778683"
+    - "608"
+    - "319586283"
   - into:
     - ACTION_EXT
     - ACTION_NAME
@@ -17,7 +19,7 @@ generate:
     - replace
 detect:
   - response:
-    - status: 200
+    - status_code: 200
 meta-info:
   - type: idor
   - threat: 80
