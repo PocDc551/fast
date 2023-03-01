@@ -1,9 +1,9 @@
 generate:
   - payload:
-    - 1
-    - 2
-    - 1232
-    - 12321
+    - "1"
+    - "2"
+    - "1232"
+    - "12321"
   - method:
     - replace
 
